@@ -20,17 +20,20 @@ struct HomeView: View {
                 ProgressView()
             }
             
-            
             HStack {
                 Button {
                     
                 } label: {
-                    Text(Constants.playString).frame(width: 100, height: 50)
+                    Text(Constants.playString)
+                        .ghostButton()
+                       
+                    
                 }
                 Button {
                     
                 } label: {
                     Text(Constants.downloadString)
+                        .ghostButton()
                 }
             }
         }
